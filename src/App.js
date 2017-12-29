@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Home from './pages/Home'
+import Courses from './pages/Courses'
 
 import {
   BrowserRouter as Router,
@@ -24,6 +25,7 @@ export default class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={Home}/>
+            <Route path="/courses"  component={Courses}/>
           </div>
         </Router>
         <Segment inverted vertical style={{ padding: '5em 0em' }}>

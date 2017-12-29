@@ -1,13 +1,16 @@
 import React from 'react'
+
 import {
   Container,
   Menu,
 } from 'semantic-ui-react'
 
+import { NavLink } from 'react-router-dom'
+
 export default () => (
   <Container>
-    <Menu.Item as='a' active>Home</Menu.Item>
+    <NavLink exact to="/" activeClassName="active" className="item">Home</NavLink>
     <Menu.Item as='a'>Program</Menu.Item>
-    <Menu.Item as='a'>Classes</Menu.Item>
+    <NavLink to="/courses" activeClassName="active" className="item">Courses</NavLink>
   </Container>
 )
