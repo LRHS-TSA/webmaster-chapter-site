@@ -19,7 +19,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Lakewood Ranch TSA" subtitle="Designing Leadership, Engineering Success" link="/about" linkLabel="Get Started" />
+        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" link="/program" linkLabel="Get Started" />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>

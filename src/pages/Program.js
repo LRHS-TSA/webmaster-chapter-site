@@ -12,11 +12,11 @@ import {
 } from 'semantic-ui-react'
 
 
-export default class Courses extends Component {
+export default class Program extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Career and Technical Education" subtitle="Exceling in STEM" />
+        <PageHeading title="How We Do it" subtitle="Designing Leadership, Engineering Success" />
         <Segment style={{ padding: '8em 0em' }} vertical>
 
         </Segment>
