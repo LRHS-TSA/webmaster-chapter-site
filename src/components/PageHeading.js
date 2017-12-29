@@ -4,12 +4,8 @@ import MenuContent from './MenuContent'
 import {
   Button,
   Container,
-  Divider,
-  Grid,
   Header,
   Icon,
-  Image,
-  List,
   Menu,
   Segment,
   Visibility,
@@ -26,10 +22,6 @@ export default class PageHeading extends Component {
 
   hideFixedMenu = () => this.setState({ visible: false })
   showFixedMenu = () => this.setState({ visible: true })
-
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     const { visible } = this.state

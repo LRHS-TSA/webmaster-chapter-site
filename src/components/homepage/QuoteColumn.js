@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
 import {
-  Container,
   Header,
   Grid
 } from 'semantic-ui-react'
 
-export default class QuoteColumn extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class QuoteColumn extends Component {
   render() {
     return (
       <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import MenuContent from '../components/MenuContent'
 import ClaimText from '../components/homepage/ClaimText'
 import QuoteColumn from '../components/homepage/QuoteColumn'
 import NewsExert from '../components/homepage/NewsExert'
@@ -11,12 +10,8 @@ import {
   Divider,
   Grid,
   Header,
-  Icon,
   Image,
-  List,
-  Menu,
   Segment,
-  Visibility,
 } from 'semantic-ui-react'
 
 

@@ -4,11 +4,7 @@ import {
   Header
 } from 'semantic-ui-react'
 
-export default class ClaimText extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class ClaimText extends Component {
   render() {
     return (
       <Container>

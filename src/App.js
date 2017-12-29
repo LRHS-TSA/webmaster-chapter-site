@@ -4,22 +4,15 @@ import Home from './pages/Home'
 
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 import {
-  Button,
   Container,
-  Divider,
   Grid,
   Header,
-  Icon,
-  Image,
   List,
-  Menu,
-  Segment,
-  Visibility,
+  Segment
 } from 'semantic-ui-react'
 
 
