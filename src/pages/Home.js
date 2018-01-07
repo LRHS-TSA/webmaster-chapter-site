@@ -55,11 +55,10 @@ export default class Home extends Component {
         </Segment>
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Container text>
-            <Header as='h3' style={{ fontSize: '2em' }}>More Than Just TSA</Header>
-            <p style={{ fontSize: '1.33em' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim eget sapien consectetur sollicitudin. Aliquam sit amet ante ut neque facilisis convallis eget non diam. Nam erat massa, placerat ac massa non, malesuada facilisis nibh. Donec rhoncus tellus nec enim tristique, ut pharetra metus rhoncus. Mauris nec elit augue.
-            </p>
-            <Button as='a' size='large'>Learn More</Button>
+            <NewsExert
+              header="More Than Just TSA"
+              exert="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim eget sapien consectetur sollicitudin. Aliquam sit amet ante ut neque facilisis convallis eget non diam. Nam erat massa, placerat ac massa non, malesuada facilisis nibh. Donec rhoncus tellus nec enim tristique, ut pharetra metus rhoncus. Mauris nec elit augue."
+            />
             <Divider
               as='h4'
               className='header'

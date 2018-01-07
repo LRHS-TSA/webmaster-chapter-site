@@ -13,7 +13,7 @@ export default class ClaimText extends Component {
         <p style={{ fontSize: '1.33em' }}>
           { this.props.exert }
         </p>
-        <Button as='a' size='large'>View</Button>
+        { this.props.viewLink != null ? <Button as='a' size='large'>View</Button> : null }
       </Container>
     );
   }
