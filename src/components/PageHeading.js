@@ -11,66 +11,66 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 
-const FixedMenu = () => (
-  <Menu fixed='top' size='large'>
-    <MenuContent />
-  </Menu>
-)
+import { fadeIn } from 'react-animations';
+import { Parallax, Background } from 'react-parallax';
+import Radium, {StyleRoot} from 'radium';
+
+const styles = {
+  fadeIn: {
+    animation: 'x 1s',
+    animationName: Radium.keyframes(fadeIn, 'fadeIn')
+  }
+}
+
 
 export default class PageHeading extends Component {
-  state = {}
-
-  hideFixedMenu = () => this.setState({ visible: false })
-  showFixedMenu = () => this.setState({ visible: true })
 
   render() {
-    const { visible } = this.state
-
     return (
       <div>
-        { visible ? <FixedMenu /> : null }
-
-        <Visibility
-          onBottomPassed={this.showFixedMenu}
-          onBottomVisible={this.hideFixedMenu}
-          once={false}
+        <Menu inverted pointing secondary fixed='top' size='large' style={{ backgroundColor: '#1b1c1d' }}>
+          <MenuContent />
+        </Menu>
+        <Parallax
+          blur={10}
+          bgImage={this.props.image}
+          bgImageAlt="the cat"
+          strength={300}
         >
-          <Segment
-            inverted
-            textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
-            vertical
-          >
-            <Container>
-              <Menu inverted pointing secondary size='large'>
-                <MenuContent />
-              </Menu>
-            </Container>
+        <Segment
+          textAlign='center'
+          style={{ minHeight: 700, padding: '1em 0em' }}
+          vertical
 
-            <Container text>
+        >
+          <Container text>
+            <StyleRoot>
+              <div style={styles.fadeIn}>
               <Header
                 as='h1'
                 content={this.props.title}
-                inverted
+                inverted={this.props.inverted}
                 style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }}
               />
               <Header
                 as='h2'
                 content={this.props.subtitle}
-                inverted
+                inverted={this.props.inverted}
                 style={{ fontSize: '1.7em', fontWeight: 'normal' }}
               />
-              { this.props.link != null ?
-                <Button primary size='huge'>
-                  {this.props.linkLabel}
-                  <Icon name='right arrow' />
-                </Button> :
-                null
-               }
-            </Container>
-          </Segment>
-        </Visibility>
-      </div>
-    )
+              </div>
+            </StyleRoot>
+            { this.props.link != null ?
+              <Button primary size='huge'>
+                {this.props.linkLabel}
+                <Icon name='right arrow' />
+              </Button> :
+              null
+              }
+          </Container>
+        </Segment>
+      </Parallax>
+    </div>
+   ) 
   }
 }

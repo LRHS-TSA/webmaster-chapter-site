@@ -14,12 +14,13 @@ import {
   Segment,
 } from 'semantic-ui-react'
 
+import intro from '../assets/cover.JPG'
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" link="/program" linkLabel="Get Started" />
+        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" link="/program" linkLabel="Get Started" image={intro} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>

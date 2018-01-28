@@ -13,12 +13,13 @@ import {
   Segment,
 } from 'semantic-ui-react'
 
+import intro from '../assets/courses.JPG'
 
 export default class Courses extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Career and Technical Education" subtitle="Exceling in STEM" />
+        <PageHeading title="Career and Technical Education" subtitle="Exceling in STEM" image={intro} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <NewsExert
             header="Teaching the Next Generation"
