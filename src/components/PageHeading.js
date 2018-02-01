@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import MenuContent from './MenuContent'
 
 import {
-  Button,
   Container,
   Header,
   Icon,
@@ -14,6 +13,8 @@ import {
 import { fadeIn } from 'react-animations';
 import { Parallax, Background } from 'react-parallax';
 import Radium, {StyleRoot} from 'radium';
+
+import { NavLink } from 'react-router-dom'
 
 const styles = {
   fadeIn: {
@@ -61,10 +62,10 @@ export default class PageHeading extends Component {
               </div>
             </StyleRoot>
             { this.props.link != null ?
-              <Button primary size='huge'>
+              <NavLink to="/program" className="ui huge primary button">
                 {this.props.linkLabel}
                 <Icon name='right arrow' />
-              </Button> :
+              </NavLink> :
               null
               }
           </Container>
