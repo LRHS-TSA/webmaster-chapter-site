@@ -7,9 +7,9 @@ import {
 export default class QuoteColumn extends Component {
   render() {
     return (
-      <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-        <Header as='h3' style={{ fontSize: '2em' }}>{ '"' + this.props.quote + '"' }</Header>
-        <p style={{ fontSize: '1.33em' }}>{ this.props.quoteAuthor }</p>
+      <Grid.Column verticalAlign="center" style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+        <Header as='h3'>{ '"' + this.props.quote + '"' }</Header>
+        <Header as='h4' textAlign="center" content={this.props.quoteAuthor} subheader={this.props.authorPosition}/>
       </Grid.Column>
     );
   }

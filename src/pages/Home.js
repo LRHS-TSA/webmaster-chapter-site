@@ -3,6 +3,7 @@ import ClaimText from '../components/homepage/ClaimText'
 import QuoteColumn from '../components/homepage/QuoteColumn'
 import NewsExert from '../components/homepage/NewsExert'
 import PageHeading from '../components/PageHeading'
+import ParallaxDivider from '../components/ParallaxDivider'
 
 import {
   Button,
@@ -15,6 +16,8 @@ import {
 } from 'semantic-ui-react'
 
 import intro from '../assets/cover.JPG'
+
+import divider from '../assets/divider.JPG'
 
 export default class Home extends Component {
   render() {
@@ -44,15 +47,17 @@ export default class Home extends Component {
         <Segment style={{ padding: '0em' }} vertical>
           <Grid celled='internally' columns='equal' stackable>
             <Grid.Row textAlign='center'>
-              <QuoteColumn quote="We're Pretty Good" quoteAuthor="Mr.Long" />
-              <QuoteColumn quote="He's Probably Lying" quoteAuthor="Mr.Richards" />
+              <QuoteColumn quote="I am so happy that I was able to get together with TSA members from other schools and plan the Manatee County TSA District Competition" quoteAuthor="Holden Scarbrough" authorPosition="2016-2017 Manatee County TSA District President" />
+              <QuoteColumn quote="Lakewood Ranch TSA provides an atmosphere to learn and produce products that can make an impact on the world. With a chapter lead by students and for students, members get the best leadership experience available.It is a great honor to be president of such a great organization and for our future leaders, continue designing leadership and engineering success." quoteAuthor="Ty Wilcox" authorPosition="LRHS TSA President" />
+              <QuoteColumn quote="Becoming a TSA state officer to the best state in the nation was truly an honor and has been one of the most exciting experiences of my life that I wish everyone could have the opportunity to encounter." quoteAuthor="Spencer Waid" authorPosition="FL TSA State Vice President" />
             </Grid.Row>
           </Grid>
         </Segment>
+        <ParallaxDivider image={divider} strength={300} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Container text>
             <NewsExert
-              header="More Than Just TSA"
+              header="An Impressive Track Record"
               exert="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim eget sapien consectetur sollicitudin. Aliquam sit amet ante ut neque facilisis convallis eget non diam. Nam erat massa, placerat ac massa non, malesuada facilisis nibh. Donec rhoncus tellus nec enim tristique, ut pharetra metus rhoncus. Mauris nec elit augue."
             />
             <Divider
@@ -61,13 +66,9 @@ export default class Home extends Component {
               horizontal
               style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-              <a href='#'>In the News</a>
+              <a href='#'>Statistics</a>
             </Divider>
-            <NewsExert
-              header="News!"
-              exert="
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim eget sapien consectetur sollicitudin. Aliquam sit amet ante ut neque facilisis convallis eget non diam. Nam erat massa, placerat ac massa non, malesuada facilisis nibh. Donec rhoncus tellus nec enim tristique, ut pharetra metus rhoncus. Mauris nec elit augue."
-            />
+
           </Container>
         </Segment>
       </div>
