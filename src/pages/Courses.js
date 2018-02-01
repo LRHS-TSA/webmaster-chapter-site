@@ -13,13 +13,50 @@ import {
   Segment,
   Rail,
   Sticky,
-  Menu
+  Menu,
+  Item
 } from 'semantic-ui-react'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 import intro from '../assets/courses.JPG'
+
+const advisors = [
+  {
+    childKey: 0,
+    image: '',
+    header: 'Ben Long',
+    description: 'Description',
+    meta: 'longb@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2050',
+  },
+  {
+    childKey: 1,
+    image: '',
+    header: 'Bryan Richards',
+    description: 'Description',
+    meta: 'richardsb@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2010',
+  },
+  {
+    childKey: 2,
+    image: '',
+    header: 'Bryon Stedman',
+    description: 'Description',
+    meta: 'stedmanb@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2153',
+  },
+  {
+    childKey: 3,
+    image: '',
+    header: 'Daniel Shafer',
+    description: 'Description',
+    meta: 'shaferd@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2026',
+  },
+]
+
 
 export default class Courses extends Component {
   state = {}
@@ -223,6 +260,11 @@ export default class Courses extends Component {
           >
             <a href='#'>Our Advisors</a>
           </Divider>
+          <Grid centered columns={3}>
+            <Grid.Column width={10}>
+             <Item.Group items={advisors} />
+            </Grid.Column>
+          </Grid>
         </Segment>
       </div>
     )
