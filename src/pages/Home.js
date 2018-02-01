@@ -26,8 +26,8 @@ export default class Home extends Component {
             <Grid.Row>
               <Grid.Column width={8}>
                 <ClaimText
-                  header="Go Mustangs!"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim eget sapien consectetur sollicitudin. Aliquam sit amet ante ut neque facilisis convallis eget non diam. Nam erat massa, placerat ac massa non, malesuada facilisis nibh. Donec rhoncus tellus nec enim tristique, ut pharetra metus rhoncus. Mauris nec elit augue. Integer tristique neque arcu, ut condimentum nisl pellentesque eget. Ut in lorem molestie, sollicitudin risus nec, laoreet enim. Vivamus imperdiet tristique ullamcorper. Pellentesque ut molestie felis."
+                  header="The TSA Creed"
+                  text="I believe that Technology Education holds an important place in my life in the technical world. I believe there is a need for the development of good attitudes concerning work, tools, materials, experimentation, and processes of industry. Guided by my teachers, artisans from industry, and my own initiative, I will strive to do my best in making my school, community, state, and nation better places in which to live. I will accept the responsibilities that are mine. I will accept the theories that are supported by proper evidence. I will explore on my own for safer, more effective methods of working and living. I will strive to develop a cooperative attitude and will exercise tact and respect for other individuals. Through the work of my hands and mind, I will express my ideas to the best of my ability. I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans."
                 />
               </Grid.Column>
               <Grid.Column floated='right' width={6}>
@@ -37,11 +37,6 @@ export default class Home extends Component {
                   size='large'
                   src='/assets/images/wireframe/white-image.png'
                 />
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column textAlign='center'>
-                <Button size='huge'>Learn More</Button>
               </Grid.Column>
             </Grid.Row>
           </Grid>
