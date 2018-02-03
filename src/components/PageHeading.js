@@ -8,6 +8,7 @@ import {
   Menu,
   Segment,
   Visibility,
+  Image
 } from 'semantic-ui-react'
 
 import { fadeIn } from 'react-animations';
@@ -15,6 +16,7 @@ import { Parallax, Background } from 'react-parallax';
 import Radium, {StyleRoot} from 'radium';
 
 import { NavLink } from 'react-router-dom'
+
 
 const styles = {
   fadeIn: {
@@ -29,7 +31,7 @@ export default class PageHeading extends Component {
   render() {
     return (
       <div>
-        <Menu inverted pointing secondary fixed='top' size='large' style={{ backgroundColor: '#1b1c1d' }}>
+        <Menu inverted pointing fixed='top' size='large' style={{ backgroundColor: '#1b1c1d' }}>
           <MenuContent />
         </Menu>
         <Parallax
@@ -62,7 +64,7 @@ export default class PageHeading extends Component {
               </div>
             </StyleRoot>
             { this.props.link != null ?
-              <NavLink to="/program" className="ui huge primary button">
+              <NavLink to="/program" className="ui huge primary button" style={{marginTop: '1em'}}>
                 {this.props.linkLabel}
                 <Icon name='right arrow' />
               </NavLink> :
