@@ -17,6 +17,10 @@ import {
   Segment
 } from 'semantic-ui-react'
 
+import leap from './assets/LEAP.pdf'
+
+import copyright from './assets/copyright.pdf'
+
 
 export default class App extends Component {
   render() {
@@ -35,26 +39,11 @@ export default class App extends Component {
             <Grid divided inverted stackable>
               <Grid.Row>
                 <Grid.Column width={3}>
-                  <Header inverted as='h4' content='About' />
+                  <Header inverted as='h4' content='For TSA' />
                   <List link inverted>
-                    <List.Item as='a'>Sitemap</List.Item>
-                    <List.Item as='a'>Contact Us</List.Item>
-                    <List.Item as='a'>Religious Ceremonies</List.Item>
-                    <List.Item as='a'>Gazebo Plans</List.Item>
+                    <List.Item as='a' href={leap}>LEAP Resume</List.Item>
+                    <List.Item as='a' href={copyright}>Copyright Checklist</List.Item>
                   </List>
-                </Grid.Column>
-                <Grid.Column width={3}>
-                  <Header inverted as='h4' content='Services' />
-                  <List link inverted>
-                    <List.Item as='a'>Banana Pre-Order</List.Item>
-                    <List.Item as='a'>DNA FAQ</List.Item>
-                    <List.Item as='a'>How To Access</List.Item>
-                    <List.Item as='a'>Favorite X-Men</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column width={7}>
-                  <Header as='h4' inverted>Footer Header</Header>
-                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </Grid.Column>
               </Grid.Row>
             </Grid>

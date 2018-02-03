@@ -4,6 +4,7 @@ import QuoteColumn from '../components/homepage/QuoteColumn'
 import NewsExert from '../components/homepage/NewsExert'
 import PageHeading from '../components/PageHeading'
 import ParallaxDivider from '../components/ParallaxDivider'
+import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
 
 import {
   Button,
@@ -18,6 +19,16 @@ import {
 import intro from '../assets/cover.JPG'
 
 import divider from '../assets/divider.JPG'
+
+import national from '../assets/nationalemblem.png'
+
+const data = [
+  {name: 'First Place', Count: 3},
+  {name: 'Second Place', Count: 1},
+  {name: 'Third Place', Count: 5},
+  {name: 'Fourth Place', Count: 4},
+  {name: 'Fifth Place', Count: 1}
+];
 
 export default class Home extends Component {
   render() {
@@ -35,10 +46,8 @@ export default class Home extends Component {
               </Grid.Column>
               <Grid.Column floated='right' width={6}>
                 <Image
-                  bordered
-                  rounded
                   size='large'
-                  src='/assets/images/wireframe/white-image.png'
+                  src={national}
                 />
               </Grid.Column>
             </Grid.Row>
@@ -58,7 +67,7 @@ export default class Home extends Component {
           <Container text>
             <NewsExert
               header="An Impressive Track Record"
-              exert="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim eget sapien consectetur sollicitudin. Aliquam sit amet ante ut neque facilisis convallis eget non diam. Nam erat massa, placerat ac massa non, malesuada facilisis nibh. Donec rhoncus tellus nec enim tristique, ut pharetra metus rhoncus. Mauris nec elit augue."
+              exert="The Lakewood Ranch High School TSA chapter has been consistently in the top four schools at the state level for several years. At the 2017 Florida TSA State Conference the LRHS chapter was awarded three first places, one second place, five third places, and thirty one top tens. Overall, the LRHS chapter placed fourth and numerous students went home with scholarships and certificates of achievements. At the 2017 National TSA Conference the LRHS chapter was awarded two third places and five top tens. At the 2017 State VEX Robotics Competition, the LRHS Robotics team placed in top three for the design award."
             />
             <Divider
               as='h4'
@@ -66,9 +75,16 @@ export default class Home extends Component {
               horizontal
               style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-              <a href='#'>Statistics</a>
+              <a href='#'>Placings at the 2017 State Conference</a>
             </Divider>
-
+            <BarChart width={600} height={300} data={data} style={{margin: 'auto'}}>
+              <XAxis dataKey="name"/>
+              <YAxis/>
+              <CartesianGrid strokeDasharray="3 3"/>
+              <Tooltip/>
+              <Legend />
+              <Bar dataKey="Count" fill="#8884d8" />
+            </BarChart>
           </Container>
         </Segment>
       </div>
