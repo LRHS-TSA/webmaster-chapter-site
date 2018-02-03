@@ -13,6 +13,7 @@ import {
   Header,
   Image,
   Segment,
+  Item
 } from 'semantic-ui-react'
 
 
@@ -25,6 +26,37 @@ import secretary from '../assets/officers/jared.JPG'
 import treas from '../assets/officers/katie.JPG'
 import reporter from '../assets/officers/chris.JPG'
 import arms from '../assets/officers/emily.JPG'
+
+const advisors = [
+  {
+    childKey: 0,
+    header: 'Ben Long',
+    description: 'Description',
+    meta: 'longb@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2050',
+  },
+  {
+    childKey: 1,
+    header: 'Bryan Richards',
+    description: 'Description',
+    meta: 'richardsb@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2010',
+  },
+  {
+    childKey: 2,
+    header: 'Bryon Stedman',
+    description: 'Description',
+    meta: 'stedmanb@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2153',
+  },
+  {
+    childKey: 3,
+    header: 'Daniel Shafer',
+    description: 'Description',
+    meta: 'shaferd@manateeschools.net',
+    extra: '(941) 727-6100 ext. 2026',
+  },
+]
 
 
 
@@ -82,6 +114,19 @@ export default class Program extends Component {
             image={arms}
           />
         </Segment>
+        <Divider
+            as='h4'
+            className='header'
+            horizontal
+            style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+          >
+            <a href='#'>Our Advisors</a>
+          </Divider>
+          <Grid centered columns={3}>
+            <Grid.Column width={10}>
+             <Item.Group items={advisors} />
+            </Grid.Column>
+          </Grid>
       </div>
     )
   }
