@@ -68,7 +68,7 @@ export default class Courses extends Component {
     const { contextRef } = this.state
     return (
       <div>
-        <PageHeading title="Career and Technical Education" subtitle="Exceling in STEM" image={intro} />          
+        <PageHeading title="Career and Technical Education" subtitle="Excelling in STEM" image={intro} />          
         <Segment style={{ padding: '8em 0em' }} vertical>
           <NewsExert
             header="Teaching the Next Generation"
@@ -83,9 +83,9 @@ export default class Courses extends Component {
             <a href='#'>Courses Offered</a>
           </Divider>
           <Grid centered columns={3}>
-            <Grid.Column width={10}>
+            <Grid.Column width={16}>
               <div ref={this.handleContextRef}>
-                <Rail position='left'>
+                <Rail internal position='left'>
                   <Sticky context={contextRef}>
                     <Menu pointing secondary vertical style={{ marginTop: '55px' }}>
                       <Menu.Item as='a' href='#agriculture' name='Agriculture, Food & Natural Resources' />
@@ -96,6 +96,7 @@ export default class Courses extends Component {
                     </Menu>
                   </Sticky>
                 </Rail>
+                <Container>
                 <ScrollableAnchor id={'agriculture'}>
                   <div>
                     <Header size='huge'>Agriculture, Food & Natural Resources</Header>
@@ -249,6 +250,7 @@ export default class Courses extends Component {
                     />
                   </div>
                 </ScrollableAnchor>
+                </Container>
               </div>
             </Grid.Column>
           </Grid>

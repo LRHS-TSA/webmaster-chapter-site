@@ -25,7 +25,7 @@ const data = [
                 ]
             },
             {
-                name: 'Tresurer',
+                name: 'Treasurer',
                 children: [
                     {
                         name: 'Presentation 2'
