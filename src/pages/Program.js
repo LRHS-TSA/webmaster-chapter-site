@@ -122,7 +122,7 @@ export default class Program extends Component {
           >
             <a href='#'>Our Advisors</a>
           </Divider>
-          <Grid centered columns={3}>
+          <Grid centered columns={3} style={{ marginBottom: '3em' }} >
             <Grid.Column width={10}>
              <Item.Group items={advisors} />
             </Grid.Column>

@@ -5,6 +5,7 @@ import NewsExert from '../components/homepage/NewsExert'
 import PageHeading from '../components/PageHeading'
 import ParallaxDivider from '../components/ParallaxDivider'
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
+import CountUp from 'react-countup';
 
 import {
   Button,
@@ -34,7 +35,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" link="/program" linkLabel="Get Started" image={intro} />
+        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
@@ -69,6 +70,44 @@ export default class Home extends Component {
               header="An Impressive Track Record"
               exert="The Lakewood Ranch High School TSA chapter has been consistently in the top four schools at the state level for several years. At the 2017 Florida TSA State Conference the LRHS chapter was awarded three first places, one second place, five third places, and thirty one top tens. Overall, the LRHS chapter placed fourth and numerous students went home with scholarships and certificates of achievements. At the 2017 National TSA Conference the LRHS chapter was awarded two third places and five top tens. At the 2017 State VEX Robotics Competition, the LRHS Robotics team placed in top three for the design award."
             />
+            <Grid columns={3} divided style={{ marginTop: '1em' }}>
+              <Grid.Row>
+                <Grid.Column>
+                  <Header size='huge' textAlign='center'>
+                    <Header.Content>
+                    <CountUp start={0} end={49} />
+                    </Header.Content>
+      
+                    <Header.Subheader>
+                    Total First Places
+                    </Header.Subheader>
+                  </Header>               
+                </Grid.Column>
+                <Grid.Column>
+                  <Header size='huge' textAlign='center'>
+                    <Header.Content>
+                    <CountUp start={0} end={163} />
+                    </Header.Content>
+      
+                    <Header.Subheader>
+                    Total Top Threes
+                    </Header.Subheader>
+                  </Header>   
+                </Grid.Column>
+                <Grid.Column>
+                 <Header size='huge' textAlign='center'>
+                    <Header.Content>
+                    <CountUp start={0} end={352} />
+                    </Header.Content>
+      
+                    <Header.Subheader>
+                    Total Top Tens
+                    </Header.Subheader>
+                  </Header>   
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
             <Divider
               as='h4'
               className='header'

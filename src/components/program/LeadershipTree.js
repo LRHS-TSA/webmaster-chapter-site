@@ -70,7 +70,7 @@ const data = [
 
 const containerStyles = {
   width: '100%',
-  height: '60vh',
+  height: '64vh',
 }
 
 export default class LeadershipTree extends React.PureComponent {

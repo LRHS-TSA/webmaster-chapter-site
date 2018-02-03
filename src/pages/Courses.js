@@ -48,11 +48,11 @@ export default class Courses extends Component {
             <a href='#'>Courses Offered</a>
           </Divider>
           <Grid centered columns={3}>
-            <Grid.Column width={16}>
+            <Grid.Column width={9}>
               <div ref={this.handleContextRef}>
-                <Rail internal position='left'>
+                <Rail position='left'>
                   <Sticky context={contextRef}>
-                    <Menu pointing secondary vertical style={{ marginTop: '55px' }}>
+                    <Menu pointing secondary vertical style={{ margin: 'auto', marginTop: '80px' }}>
                       <Menu.Item as='a' href='#agriculture' name='Agriculture, Food & Natural Resources' />
                       <Menu.Item as='a' href='#av' name='Arts, AV Technology & Communication' />
                       <Menu.Item as='a' href='#education' name='Education & Training' />
