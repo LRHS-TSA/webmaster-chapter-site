@@ -6,12 +6,10 @@ import LeadershipTree from '../components/program/LeadershipTree';
 import OfficerExert from '../components/program/OfficerExert';
 
 import {
-  Button,
   Container,
   Divider,
   Grid,
   Header,
-  Image,
   Segment,
   Item
 } from 'semantic-ui-react'
@@ -81,7 +79,7 @@ export default class Program extends Component {
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
           >
-            <a href='#'>Our Officers</a>
+            Our Officers
           </Divider>
           <OfficerExert
             name="Ty Wilcox"
@@ -120,7 +118,7 @@ export default class Program extends Component {
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
           >
-            <a href='#'>Our Advisors</a>
+            Our Advisors
           </Divider>
           <Grid centered columns={3} style={{ marginBottom: '3em' }} >
             <Grid.Column width={10}>

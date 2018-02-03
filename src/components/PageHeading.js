@@ -6,13 +6,11 @@ import {
   Header,
   Icon,
   Menu,
-  Segment,
-  Visibility,
-  Image
+  Segment
 } from 'semantic-ui-react'
 
 import { fadeIn } from 'react-animations';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import Radium, {StyleRoot} from 'radium';
 
 import { NavLink } from 'react-router-dom'

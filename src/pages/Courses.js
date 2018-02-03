@@ -4,17 +4,14 @@ import NewsExert from '../components/homepage/NewsExert'
 import ClassExert from '../components/courses/ClassExert'
 
 import {
-  Button,
   Container,
   Divider,
   Grid,
   Header,
-  Image,
   Segment,
   Rail,
   Sticky,
-  Menu,
-  Item
+  Menu
 } from 'semantic-ui-react'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
@@ -45,7 +42,7 @@ export default class Courses extends Component {
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
           >
-            <a href='#'>Courses Offered</a>
+            Courses Offered
           </Divider>
           <Grid centered columns={3}>
             <Grid.Column width={9}>

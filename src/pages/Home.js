@@ -8,7 +8,6 @@ import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recha
 import CountUp from 'react-countup';
 
 import {
-  Button,
   Container,
   Divider,
   Grid,
@@ -114,7 +113,7 @@ export default class Home extends Component {
               horizontal
               style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-              <a href='#'>Placings at the 2017 State Conference</a>
+              Placings at the 2017 State Conference
             </Divider>
             <BarChart width={600} height={300} data={data} style={{margin: 'auto'}}>
               <XAxis dataKey="name"/>
