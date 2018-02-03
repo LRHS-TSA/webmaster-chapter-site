@@ -61,7 +61,7 @@ export default class Courses extends Component {
                 <Container>
                 <ScrollableAnchor id={'agriculture'}>
                   <div>
-                    <Header size='huge'>Agriculture, Food & Natural Resources</Header>
+                    <Header size='huge' style={{ marginBottom: '2em' }}>Agriculture, Food & Natural Resources</Header>
                     <ClassExert
                       title="AGRISCIENCE FOUNDATIONS 1"
                       text="This science course is designed to develop competencies in the areas of agricultural history and the global impact of agriculture; career opportunities; scientific and research concepts; biological and physical science principles; environmental principles; agriscience safety; principles of leadership; and agribusiness, employability, and human relations skills in agriscience. Laboratory-based activities are an integral part of this course. This course is a prerequisite for all other agricultural courses unless otherwise stated."
@@ -110,7 +110,7 @@ export default class Courses extends Component {
                 </ScrollableAnchor>
                 <ScrollableAnchor id={'av'}>
                   <div>
-                   <Header size='huge'>Arts, AV Technology & Communication</Header>
+                   <Header size='huge' style={{ marginBottom: '2em' }}>Arts, AV Technology & Communication</Header>
                     <ClassExert
                       title="TELEVISION PRODUCTION 1"
                       text="Level 1 TV Production is designed for the novice or beginning Visual Communications student. Students will learn basic studio operations, HD camera skills, script writing basics, as well as Premiere Pro editing techniques. Learning the industry terminology, studio jargon, and editing principles are essential for success in this class."
@@ -127,7 +127,7 @@ export default class Courses extends Component {
                 </ScrollableAnchor>
                 <ScrollableAnchor id={'education'}>
                   <div>
-                   <Header size='huge'>Education Training</Header>
+                   <Header size='huge' style={{ marginBottom: '2em' }}>Education Training</Header>
                     <ClassExert
                       title="EARLY CHILDHOOD EDUCATION 1"
                       text="This course is the first in a series of four preparing students to work with young children. Students begin their certification process through the Florida Department of Children and Families (DCF) while studying child growth and development; health safety and nutrition; child abuse and neglect; and the rules and regulations for Florida. Students will also receive Infant and Child CPR/First Aid training and certification. Students will be introduced to our Mini Mustang VPK class as they help in the preschool setting. There is a fee for testing costs."
@@ -148,7 +148,7 @@ export default class Courses extends Component {
                 </ScrollableAnchor>
                 <ScrollableAnchor id={'engineering'}>
                  <div>
-                 <Header size='huge'>Engineering Technology Education</Header>
+                 <Header size='huge' style={{ marginBottom: '2em' }}>Engineering Technology Education</Header>
                   <ClassExert
                       title="APPLIED ENGINEERING TECHNOLOGY 1"
                       text="Applied Engineering Technology 1 is a course in which students use their artistic and creative abilities to design products and structures with the use of computers and a variety of software to broaden their design skills. Course activities include developing drawings of products, structures, and systems. Students will investigate how individuals use the technological systems of transportation, communication, design, manufacturing and construction to address societal needs. Through hands-on activities students will use laser engravers, rapid prototyping and 3D modeling to design/engineer solutions to identified problems and use a variety of tools and equipment to produce and assess different products and structures. Students will be able to select a certain product and prepare dimensioned drawings and related documents."
@@ -185,7 +185,7 @@ export default class Courses extends Component {
                 </ScrollableAnchor>
                 <ScrollableAnchor id={'it'}>
                   <div>
-                    <Header size='huge'>Information Technology</Header>
+                    <Header size='huge' style={{ marginBottom: '2em' }}>Information Technology</Header>
                     <ClassExert
                       title="DIGITAL INFORMATION TECHNOLOGY"
                       text="This course is designed to provide a basic overview of current business and information systems and trends, and to introduce students to fundamental skills required for today's business and academic environments. Emphasis is placed on developing fundamental computer skills. The intention of this course is to prepare students to be successful both personally and professionally in an information based society. Digital Information Technology includes the exploration and use of: databases, the internet, spreadsheets, presentation applications, management of personal information and email, word processing and document manipulation, HTML, web page design, and the integration of these programs using software that meets industry standards."

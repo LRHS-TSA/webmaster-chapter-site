@@ -40,7 +40,7 @@ export default class PageHeading extends Component {
         >
         <Segment
           textAlign='center'
-          style={{ minHeight: 700, padding: '1em 0em' }}
+          style={{ minHeight: '100vh', padding: '1em 0em' }}
           vertical
 
         >
@@ -51,7 +51,7 @@ export default class PageHeading extends Component {
                 as='h1'
                 content={this.props.title}
                 inverted={this.props.inverted}
-                style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }}
+                style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '40vh' }}
               />
               <Header
                 as='h2'

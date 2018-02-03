@@ -16,5 +16,6 @@ export default () => (
     <NavLink exact to="/" activeClassName="active" className="item">Home</NavLink>
     <NavLink to="/program" activeClassName="active" className="item">Program</NavLink>
     <NavLink to="/courses" activeClassName="active" className="item">Courses</NavLink>
+    <a href="https://brief.lrhstsa.com/" className="item">Briefing</a>
   </Container>
 )
