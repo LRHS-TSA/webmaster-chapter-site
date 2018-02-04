@@ -29,28 +29,24 @@ const advisors = [
   {
     childKey: 0,
     header: 'Ben Long',
-    description: 'Description',
     meta: 'longb@manateeschools.net',
     extra: '(941) 727-6100 ext. 2050',
   },
   {
     childKey: 1,
     header: 'Bryan Richards',
-    description: 'Description',
     meta: 'richardsb@manateeschools.net',
     extra: '(941) 727-6100 ext. 2010',
   },
   {
     childKey: 2,
     header: 'Bryon Stedman',
-    description: 'Description',
     meta: 'stedmanb@manateeschools.net',
     extra: '(941) 727-6100 ext. 2153',
   },
   {
     childKey: 3,
     header: 'Daniel Shafer',
-    description: 'Description',
     meta: 'shaferd@manateeschools.net',
     extra: '(941) 727-6100 ext. 2026',
   },
@@ -62,7 +58,7 @@ export default class Program extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="How We Do it" subtitle="Designing Leadership, Engineering Success" image={intro} />
+        <PageHeading title="How We Do It" subtitle="Designing Leadership, Engineering Success" image={intro} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <ClaimText
             header="Working Hard for Our Goals."
