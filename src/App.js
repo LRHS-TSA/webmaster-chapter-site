@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import Courses from './pages/Courses'
 import Program from './pages/Program'
 
+import ScrollToTop from './components/ScrollToTop'
+
 import {
   BrowserRouter as Router,
   Route
@@ -28,11 +30,11 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-          <div>
+          <ScrollToTop>
             <Route exact path="/" component={Home}/>
             <Route path="/courses"  component={Courses}/>
             <Route path="/program"  component={Program}/>
-          </div>
+          </ScrollToTop>
         </Router>
         <Segment inverted vertical style={{ padding: '5em 0em' }}>
           <Container>

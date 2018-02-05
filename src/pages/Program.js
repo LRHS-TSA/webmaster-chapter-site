@@ -29,24 +29,28 @@ const advisors = [
   {
     childKey: 0,
     header: 'Ben Long',
+    description: 'Mr. Long has been an advisor of the Lakewood Ranch High School TSA chapter for the last five years. Prior to working at LRHS, Long taught engineering courses at Richard Montgomery High School in Maryland. Following that, he was an advisor for the Brookside Middle School TSA chapter.',
     meta: 'longb@manateeschools.net',
     extra: '(941) 727-6100 ext. 2050',
   },
   {
     childKey: 1,
     header: 'Bryan Richards',
+    description: 'Mr. Richards has been working at LRHS for the past ten years. This is his first year teaching engineering and being an advisor for the LRHS TSA chapter. Along with helping at TSA meetings, Richards works as a football coach. Before becoming an engineering teacher, he was an IT and testing coordinator.',
     meta: 'richardsb@manateeschools.net',
     extra: '(941) 727-6100 ext. 2010',
   },
   {
     childKey: 2,
     header: 'Bryon Stedman',
+    description: 'Mr. Stedman has been teaching at LRHS for the past eighteen years as the television production teacher. This year he became a TSA advisor to aid our members in events containing video components. Prior to working at LRHS, Stedman taught at St. Cloud High School in Orlando.',
     meta: 'stedmanb@manateeschools.net',
     extra: '(941) 727-6100 ext. 2153',
   },
   {
     childKey: 3,
     header: 'Daniel Shafer',
+    description: 'Mr. Shafer has been teaching at LRHS for the past five years. This is his second year as a LRHS TSA advisor. Shafer teaches all orchestra classes at the school and works with events containing music components.',
     meta: 'shaferd@manateeschools.net',
     extra: '(941) 727-6100 ext. 2026',
   },
@@ -67,8 +71,10 @@ export default class Program extends Component {
           <ParallaxDivider image={programdivider} strength={300} />
           <Container>
            <Header as='h1' content='How We Do It' subheader="It's all in the students" />
+            <p>Use the interactive chain of command below to see how LRHS TSA runs their TSA chapter. Click on the various points to see how they expand down the hierarchy</p>
+            <p>At the bottom of the chain of command is the members. When the members need assistance or have problems they talk to their team leaders. If their problem persists, the team leader or member moves on to discuss with the small group leaders. Small group leaders are members that are officers or are on the executive committee. Each group has three to four events that the small group leader is in charge of. Above the small group leaders are the officers, headed by the president. At the top of the chain of command is the advisors.</p>
+           <LeadershipTree />
           </Container>
-          <LeadershipTree />
           <Divider
             as='h4'
             className='header'
