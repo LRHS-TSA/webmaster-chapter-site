@@ -10,8 +10,9 @@ import {
 } from 'semantic-ui-react'
 
 import { fadeIn } from 'react-animations';
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from 'react-parallax';
 import Radium, {StyleRoot} from 'radium';
+import BlurImageLoader from 'react-blur-image-loader';
 
 import { NavLink } from 'react-router-dom'
 
@@ -34,9 +35,11 @@ export default class PageHeading extends Component {
         </Menu>
         <Parallax
           blur={10}
-          bgImage={this.props.image}
-          bgImageAlt="the cat"
+          bgImageAlt=""
           strength={300}
+          bgWidth="auto"
+          bgHeight="auto"
+          className="parallax"
         >
         <Segment
           textAlign='center'
@@ -70,8 +73,15 @@ export default class PageHeading extends Component {
               }
           </Container>
         </Segment>
+        <Background className="parallax-background">
+          <BlurImageLoader src={this.props.image}
+                        preview={this.props.thumbnail}
+                        fullCover={true}
+                        maxBlurLevel={10}
+                        transitionTime={30}/>
+        </Background>
       </Parallax>
     </div>
-   ) 
+   )
   }
 }

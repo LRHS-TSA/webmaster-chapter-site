@@ -17,8 +17,10 @@ import {
 } from 'semantic-ui-react'
 
 import intro from '../assets/cover.JPG'
+import introThumb from '../assets/thumbnail/cover.jpg'
 
 import divider from '../assets/divider.JPG'
+import dividerThumb from '../assets/thumbnail/divider.jpg'
 
 import national from '../assets/nationalemblem.png'
 
@@ -34,7 +36,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} />
+        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} thumbnail={introThumb} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
@@ -62,7 +64,7 @@ export default class Home extends Component {
             </Grid.Row>
           </Grid>
         </Segment>
-        <ParallaxDivider image={divider} strength={300} />
+        <ParallaxDivider image={divider} thumbnail={dividerThumb} strength={300} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Container text>
             <NewsExert
@@ -76,33 +78,33 @@ export default class Home extends Component {
                     <Header.Content>
                     <CountUp start={0} end={49} />
                     </Header.Content>
-      
+
                     <Header.Subheader>
                     Total First Places
                     </Header.Subheader>
-                  </Header>               
+                  </Header>
                 </Grid.Column>
                 <Grid.Column>
                   <Header size='huge' textAlign='center'>
                     <Header.Content>
                     <CountUp start={0} end={163} />
                     </Header.Content>
-      
+
                     <Header.Subheader>
                     Total Top Threes
                     </Header.Subheader>
-                  </Header>   
+                  </Header>
                 </Grid.Column>
                 <Grid.Column>
                  <Header size='huge' textAlign='center'>
                     <Header.Content>
                     <CountUp start={0} end={352} />
                     </Header.Content>
-      
+
                     <Header.Subheader>
                     Total Top Tens
                     </Header.Subheader>
-                  </Header>   
+                  </Header>
                 </Grid.Column>
               </Grid.Row>
             </Grid>

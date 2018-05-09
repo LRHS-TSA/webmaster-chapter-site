@@ -1,17 +1,27 @@
 import React, { Component } from 'react'
 
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from 'react-parallax';
+import BlurImageLoader from 'react-blur-image-loader';
+
 
 export default class ParallaxDivider extends Component {
   render() {
     return (
         <Parallax
-        bgImage={this.props.image}
         bgImageAlt="parallax"
         strength={this.props.strength}
-        style={{marginTop: '4em', marginBottom: '4em'}}
+        bgWidth="auto"
+        bgHeight="auto"
+        className="parallax"
         >
             <div style={{height: 250}}> </div>
+            <Background className="parallax-background">
+              <BlurImageLoader src={this.props.image}
+                            preview={this.props.thumbnail}
+                            fullCover={true}
+                            maxBlurLevel={10}
+                            transitionTime={30}/>
+            </Background>
         </Parallax>
     );
   }
