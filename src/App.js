@@ -19,6 +19,8 @@ import {
   Segment
 } from 'semantic-ui-react'
 
+import '../node_modules/flexboxgrid/css/flexboxgrid.min.css'
+
 import leap from './assets/LEAP.pdf'
 
 import copyright from './assets/copyright.pdf'
