@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ClaimText from '../components/homepage/ClaimText'
 import QuoteColumn from '../components/homepage/QuoteColumn'
 import NewsExert from '../components/homepage/NewsExert'
+import ParallaxSegment from '../components/homepage/ParallaxSegment'
 import PageHeading from '../components/PageHeading'
 import ParallaxDivider from '../components/ParallaxDivider'
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
@@ -32,12 +33,55 @@ const data = [
   {name: 'Fifth Place', Count: 1}
 ];
 
+const creedSegment = [
+  {
+    start: "90vh",
+    end: "130vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: 40,
+        property: "translateY",
+        unit: "vh"
+      }    
+    ]
+  },
+  {
+    start: "130vh",
+    end: "140vh",
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity"
+      }    
+    ]    
+  }
+]
+
+const restOfPage = [
+  {
+    start: "100vh",
+    end: "140vh",
+    easing: "easeIn",
+    properties: [
+      {
+        startValue: 80,
+        endValue: 0,
+        property: "translateY",
+        unit: "vh"
+      }    
+    ]
+  }
+]
+
 export default class Home extends Component {
   render() {
     return (
       <div>
         <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} thumbnail={introThumb} />
-        <Segment style={{ padding: '8em 0em' }} vertical>
+        
+        <ParallaxSegment parallaxEffect={creedSegment} segmentStyle={{ padding: '8em 0em' }}>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
               <Grid.Column width={8}>
@@ -54,7 +98,9 @@ export default class Home extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Segment>
+        </ParallaxSegment>
+
+      <ParallaxSegment parallaxEffect={restOfPage}>
         <Segment style={{ padding: '0em' }} vertical>
           <Grid celled='internally' columns='equal' stackable>
             <Grid.Row textAlign='center'>
@@ -64,7 +110,6 @@ export default class Home extends Component {
             </Grid.Row>
           </Grid>
         </Segment>
-        <ParallaxDivider image={divider} thumbnail={dividerThumb} strength={300} />
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Container text>
             <NewsExert
@@ -127,6 +172,7 @@ export default class Home extends Component {
             </BarChart>
           </Container>
         </Segment>
+      </ParallaxSegment>
       </div>
     )
   }

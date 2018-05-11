@@ -86,7 +86,6 @@ const graph = {
   edges: [
     {to: 1, from: 0, label: 'Member Of'},
     {to: 2, from: 0, label: 'Member Of'},
-    {to: 3, from: 0, label: 'Team Leader Of'},
     {to: 4, from: 0, label: 'Member Of'},
     {to: 7, from: 6, label: 'Member Of'},
     {to: 1, from: 6, label: 'Member Of'},
@@ -190,6 +189,7 @@ const graph = {
     {to: 15, from: 13, label: 'Team Leader Of'},
     {to: 8, from: 6, label: 'Team Leader Of'},
     {to: 5, from: 0, label: 'Team Leader Of'},
+    {to: 3, from: 0, label: 'Team Leader Of'},
 
 
     //2017 Officer Roles
