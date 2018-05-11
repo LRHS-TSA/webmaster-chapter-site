@@ -7,12 +7,8 @@ import ParallaxSegment from '../components/homepage/ParallaxSegment'
 import {
   Container,
   Divider,
-  Grid,
   Header,
   Segment,
-  Rail,
-  Sticky,
-  Menu
 } from 'semantic-ui-react'
 
 
@@ -82,11 +78,9 @@ const engineering = [
 export default class Courses extends Component {
   state = {}
 
-  handleContextRef = contextRef => this.setState({ contextRef })
 
 
   render() {
-    const { contextRef } = this.state
     return (
       <div>
         <PageHeading title="Career and Technical Education" subtitle="Excelling in STEM" image={intro} />          

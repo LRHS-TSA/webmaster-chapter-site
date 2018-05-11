@@ -4,7 +4,6 @@ import QuoteColumn from '../components/homepage/QuoteColumn'
 import NewsExert from '../components/homepage/NewsExert'
 import ParallaxSegment from '../components/homepage/ParallaxSegment'
 import PageHeading from '../components/PageHeading'
-import ParallaxDivider from '../components/ParallaxDivider'
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
 import CountUp from 'react-countup';
 
@@ -20,8 +19,6 @@ import {
 import intro from '../assets/cover.JPG'
 import introThumb from '../assets/thumbnail/cover.jpg'
 
-import divider from '../assets/divider.JPG'
-import dividerThumb from '../assets/thumbnail/divider.jpg'
 
 import national from '../assets/nationalemblem.png'
 
