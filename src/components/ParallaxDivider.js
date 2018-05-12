@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import { Parallax, Background } from 'react-parallax';
 import BlurImageLoader from 'react-blur-image-loader';
 
-
 export default class ParallaxDivider extends Component {
   render() {
     return (

@@ -63,17 +63,19 @@ export default class Program extends Component {
     return (
       <div>
         <PageHeading title="How We Do It" subtitle="Designing Leadership, Engineering Success" image={intro} />
-        <Segment style={{ padding: '8em 0em' }} vertical>
+        <Segment style={{ padding: '8em 0em', paddingBottom: '2em' }} vertical>
           <ClaimText
             header="Working Hard for Our Goals."
             text="Lakewood Ranch High School’s TSA chapter is highly devoted to each and every event that they compete in, including VEX Robotics. On December 16, 2017 our chapter hosted a VEX Tournament at our high school. For the VEX tournament they invited all schools--middle and high schools--in the area to compete in the tournament. Around 30 teams came to participate, and the event lasted from 8:00 in the morning to 6:00 in the evening, beginning with inspections and ending with an awards session. At the tournament, Lakewood Ranch High School TSA chapter members had the opportunity to volunteer, and in return received a portion of their state fees paid for using the money collected at the concession stand."
           />
           <ParallaxDivider image={programdivider} strength={300} />
-          <Container>
+          <Container style={{ marginTop: '2em' }}>
            <Header as='h1' content='How We Do It' subheader="It's all in the students" />
             <p>Use the interactive chain of command below to see how LRHS TSA runs their TSA chapter. Click on the various points to see how they expand down the hierarchy</p>
             <p>At the bottom of the chain of command is the members. When the members need assistance or have problems they talk to their team leaders. If their problem persists, the team leader or member moves on to discuss with the small group leaders. Small group leaders are members that are officers or are on the executive committee. Each group has three to four events that the small group leader is in charge of. Above the small group leaders are the officers, headed by the president. At the top of the chain of command is the advisors.</p>
-           <ProgramWeb />
+           <div className="hide-mobile">
+            <ProgramWeb />
+           </div>
           </Container>
           <Divider
             as='h4'

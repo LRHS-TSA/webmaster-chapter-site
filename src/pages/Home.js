@@ -58,7 +58,7 @@ const creedSegment = [
 
 const restOfPage = [
   {
-    start: "100vh",
+    start: "90vh",
     end: "140vh",
     easing: "easeIn",
     properties: [
@@ -76,7 +76,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} thumbnail={introThumb} />
+        <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} thumbnail={introThumb} inverted />
         
         <ParallaxSegment parallaxEffect={creedSegment} segmentStyle={{ padding: '8em 0em' }}>
           <Grid container stackable verticalAlign='middle'>

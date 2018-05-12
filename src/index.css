@@ -11,10 +11,17 @@ body {
 
 .parallax-background {
   width: auto;
-  height: 100%;
+  height: 200%;
+  margin: auto;
 }
 
 .react-parallax-background-children {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 480px) {
+  .hide-mobile {
+      display: none;
+  }
 }
