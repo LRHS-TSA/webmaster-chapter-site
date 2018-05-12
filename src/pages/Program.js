@@ -85,12 +85,12 @@ export default class Program extends Component {
           </Divider>
           <OfficerExert
             name="Ty Wilcox"
-            description="Ty Wilcox is a senior at Lakewood Ranch High School and currently serves as President of the LRHS TSA chapter. Some of Ty’s favorite events have been Engineering Design, Dragster Design, and Computer Integrated Manufacturing. Ty plans to attend the United States Military Academy Preparatory School. His favorite thing about TSA is the leadership aspect."
+            description="Ty Wilcox is a senior at Lakewood Ranch High School and currently serves as President of the LRHS TSA chapter. Some of Ty’s favorite events have been Engineering Design, Dragster Design, and Computer Integrated Manufacturing. Ty plans to attend the University of South Florida. His favorite thing about TSA is the leadership aspect."
             image={president}
           />
           <OfficerExert
             name="Holden Scarbrough"
-            description="Holden Scarbrough is a senior at Lakewood Ranch High School and currently serves as Vice President of the LRHS TSA chapter. Some of Holden’s favorite events have been Engineering Design, Future Technology Teacher, and Scientific Visualization. Holden plans to attend the University of Florida."
+            description="Holden Scarbrough is a senior at Lakewood Ranch High School and currently serves as Vice President of the LRHS TSA chapter. Some of Holden’s favorite events have been Engineering Design, Future Technology Teacher, and Scientific Visualization. Holden plans to attend the University of Central Florida."
             image={vice}
           />
           <OfficerExert
