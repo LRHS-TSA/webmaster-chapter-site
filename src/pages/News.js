@@ -16,10 +16,10 @@ import officerElections from '../assets/updates/JPEG/officerelections.jpg'
 import states from '../assets/updates/JPEG/states.jpg'
 import tostates from '../assets/updates/JPEG/tostates.jpg'
 import districts from '../assets/updates/JPEG/districts.jpg'
-import leadership from '../assets/updates/JPEG/districts.jpg'
+import leadership from '../assets/updates/leadership.jpg'
 import ctso from '../assets/updates/JPEG/ctso.jpg'
 import firstMeeting from '../assets/updates/JPEG/firstmeeting.jpg'
-import freshmenOrientation from '../assets/updates/JPEG/firstmeeting.jpg'
+import freshmenOrientation from '../assets/updates/freshmen.jpg'
 
 
 import cover from '../assets/updates/cover.jpg'
