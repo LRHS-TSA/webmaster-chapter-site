@@ -157,7 +157,7 @@ export default class Home extends Component {
               horizontal
               style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-              Placings at the 2017 State Conference
+              Placings at the 2018 State Conference
             </Divider>
             <BarChart width={600} height={300} data={data} style={{margin: 'auto'}}>
               <XAxis dataKey="name"/>
