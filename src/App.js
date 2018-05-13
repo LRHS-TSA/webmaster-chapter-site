@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import Home from './pages/Home'
 import Courses from './pages/Courses'
 import Program from './pages/Program'
+import News from './pages/News'
+
 
 import ScrollToTop from './components/ScrollToTop'
 
@@ -34,6 +36,7 @@ export default class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/courses"  component={Courses}/>
             <Route path="/program"  component={Program}/>
+            <Route path="/news"  component={News}/>
           </ScrollToTop>
         </Router>
         <Segment inverted vertical style={{ padding: '5em 0em' }}>
