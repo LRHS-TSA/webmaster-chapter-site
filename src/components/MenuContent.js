@@ -12,7 +12,9 @@ import logo from '../assets/logo.svg'
 
 export default () => (
   <Container>
-    <Menu.Item header><Image src={logo} size='tiny' verticalAlign='middle' /></Menu.Item>
+    <div className="hide-mobile">
+     <Menu.Item header><Image src={logo} size='tiny' verticalAlign='middle' /></Menu.Item>
+    </div>
     <NavLink exact to="/" activeClassName="active" className="item">Home</NavLink>
     <NavLink to="/program" activeClassName="active" className="item">Program</NavLink>
     <NavLink to="/courses" activeClassName="active" className="item">Courses</NavLink>

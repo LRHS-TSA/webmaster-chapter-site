@@ -23,11 +23,11 @@ import introThumb from '../assets/thumbnail/cover.jpg'
 import national from '../assets/nationalemblem.png'
 
 const data = [
-  {name: 'First Place', Count: 3},
-  {name: 'Second Place', Count: 1},
-  {name: 'Third Place', Count: 5},
-  {name: 'Fourth Place', Count: 4},
-  {name: 'Fifth Place', Count: 1}
+  {name: 'First Place', Count: 4},
+  {name: 'Second Place', Count: 5},
+  {name: 'Third Place', Count: 6},
+  {name: 'Fourth Place', Count: 2},
+  {name: 'Fifth Place', Count: 3}
 ];
 
 const creedSegment = [
@@ -111,14 +111,14 @@ export default class Home extends Component {
           <Container text>
             <NewsExert
               header="An Impressive Track Record"
-              exert="The Lakewood Ranch High School TSA chapter has been consistently in the top four schools at the state level for several years. At the 2017 Florida TSA State Conference the LRHS chapter was awarded three first places, one second place, five third places, and thirty one top tens. Overall, the LRHS chapter placed fourth and numerous students went home with scholarships and certificates of achievements. At the 2017 National TSA Conference the LRHS chapter was awarded two third places and five top tens. At the 2017 State VEX Robotics Competition, the LRHS Robotics team placed in top three for the design award."
+              exert="At the 2017 National TSA Conference the LRHS chapter was awarded two third places and five top tens. At the 2017 State VEX Robotics Competition, the LRHS Robotics team placed in top three for the design award. The Lakewood Ranch High School TSA chapter has been consistently in the top four schools at the state level for several years. At the 2018 Florida TSA State Conference the LRHS chapter was awarded four first places, five second place, six third places, and twenty nine top tens. Overall, the LRHS chapter placed second and numerous students went home with scholarships and certificates of achievements."
             />
             <Grid columns={3} divided style={{ marginTop: '1em' }}>
               <Grid.Row>
                 <Grid.Column>
                   <Header size='huge' textAlign='center'>
                     <Header.Content>
-                    <CountUp start={0} end={49} />
+                    <CountUp start={0} end={53} />
                     </Header.Content>
 
                     <Header.Subheader>
@@ -129,7 +129,7 @@ export default class Home extends Component {
                 <Grid.Column>
                   <Header size='huge' textAlign='center'>
                     <Header.Content>
-                    <CountUp start={0} end={163} />
+                    <CountUp start={0} end={178} />
                     </Header.Content>
 
                     <Header.Subheader>
@@ -140,7 +140,7 @@ export default class Home extends Component {
                 <Grid.Column>
                  <Header size='huge' textAlign='center'>
                     <Header.Content>
-                    <CountUp start={0} end={352} />
+                    <CountUp start={0} end={381} />
                     </Header.Content>
 
                     <Header.Subheader>

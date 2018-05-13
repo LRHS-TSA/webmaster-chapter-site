@@ -71,7 +71,7 @@ export default class Program extends Component {
           <ParallaxDivider image={programdivider} strength={300} />
           <Container style={{ marginTop: '2em' }}>
            <Header as='h1' content='How We Do It' subheader="It's all in the students" />
-            <p>Use the interactive chain of command below to see how LRHS TSA runs their TSA chapter. Click on the various points to see how they expand down the hierarchy</p>
+            <p>Use the interactive web below to see how LRHS TSA runs their TSA chapter. Click on the various points to see how they expand through the members events.</p>
             <p>At the bottom of the chain of command is the members. When the members need assistance or have problems they talk to their team leaders. If their problem persists, the team leader or member moves on to discuss with the small group leaders. Small group leaders are members that are officers or are on the executive committee. Each group has three to four events that the small group leader is in charge of. Above the small group leaders are the officers, headed by the president. At the top of the chain of command is the advisors.</p>
            <div className="hide-mobile">
             <ProgramWeb />
