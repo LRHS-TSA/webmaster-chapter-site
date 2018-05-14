@@ -5,7 +5,8 @@ import NewsExert from '../components/homepage/NewsExert'
 import ParallaxSegment from '../components/homepage/ParallaxSegment'
 import PageHeading from '../components/PageHeading'
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
-import CountUp from 'react-countup';
+import CountUp, { startAnimation } from 'react-countup';
+import Waypoint from 'react-waypoint';
 
 import {
   Container,
@@ -113,43 +114,53 @@ export default class Home extends Component {
               header="An Impressive Track Record"
               exert="At the 2017 National TSA Conference the LRHS chapter was awarded two third places and five top tens. At the 2017 State VEX Robotics Competition, the LRHS Robotics team placed in top three for the design award. The Lakewood Ranch High School TSA chapter has been consistently in the top four schools at the state level for several years. At the 2018 Florida TSA State Conference the LRHS chapter was awarded four first places, five second place, six third places, and twenty nine top tens. Overall, the LRHS chapter placed second and numerous students went home with scholarships and certificates of achievements."
             />
-            <Grid columns={3} divided style={{ marginTop: '1em' }}>
-              <Grid.Row>
-                <Grid.Column>
-                  <Header size='huge' textAlign='center'>
-                    <Header.Content>
-                    <CountUp start={0} end={53} />
-                    </Header.Content>
+            <Waypoint onEnter={() => { startAnimation(this.firsts); startAnimation(this.threes); startAnimation(this.tens);}}>
+              <div>
+                <Grid columns={3} style={{ marginTop: '1em' }}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Header size='huge' textAlign='center'>
+                        <Header.Content>
+                        <CountUp start={0} end={53} redraw ref={(countUp) => {
+                          this.firsts = countUp;
+                        }} />
+                        </Header.Content>
 
-                    <Header.Subheader>
-                    Total First Places
-                    </Header.Subheader>
-                  </Header>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header size='huge' textAlign='center'>
-                    <Header.Content>
-                    <CountUp start={0} end={178} />
-                    </Header.Content>
+                        <Header.Subheader>
+                        Total First Places
+                        </Header.Subheader>
+                      </Header>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Header size='huge' textAlign='center'>
+                        <Header.Content>
+                        <CountUp start={0} end={178} ref={(countUp) => {
+                          this.threes = countUp;
+                        }} />
+                        </Header.Content>
 
-                    <Header.Subheader>
-                    Total Top Threes
-                    </Header.Subheader>
-                  </Header>
-                </Grid.Column>
-                <Grid.Column>
-                 <Header size='huge' textAlign='center'>
-                    <Header.Content>
-                    <CountUp start={0} end={381} />
-                    </Header.Content>
+                        <Header.Subheader>
+                        Total Top Threes
+                        </Header.Subheader>
+                      </Header>
+                    </Grid.Column>
+                    <Grid.Column>
+                    <Header size='huge' textAlign='center'>
+                        <Header.Content>
+                        <CountUp start={0} end={381} ref={(countUp) => {
+                          this.tens = countUp;
+                        }} />
+                        </Header.Content>
 
-                    <Header.Subheader>
-                    Total Top Tens
-                    </Header.Subheader>
-                  </Header>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
+                        <Header.Subheader>
+                        Total Top Tens
+                        </Header.Subheader>
+                      </Header>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </div>
+            </Waypoint>
 
             <div className="hide-mobile">
               <Divider
