@@ -151,15 +151,17 @@ export default class Home extends Component {
               </Grid.Row>
             </Grid>
 
-            <Divider
-              as='h4'
-              className='header'
-              horizontal
-              style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-            >
-              Placings at the 2018 State Conference
-            </Divider>
-            <BarChart width={600} height={300} data={data} style={{margin: 'auto'}}>
+            <div className="hide-mobile">
+              <Divider
+                as='h4'
+                className='header'
+                horizontal
+                style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+              >
+                Placings at the 2018 State Conference
+              </Divider>
+            </div>
+            <BarChart width={600} height={300} data={data} style={{margin: 'auto'}} className="hide-mobile">
               <XAxis dataKey="name"/>
               <YAxis/>
               <CartesianGrid strokeDasharray="3 3"/>

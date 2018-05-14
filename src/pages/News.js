@@ -34,7 +34,7 @@ export default class Home extends Component {
         <div>
             <PageHeading title="News and Noteworthy" image={cover} />
             <Container>
-              <Card.Group itemsPerRow={2}>
+              <Card.Group itemsPerRow={window.innerWidth < 480 ? 1 : 2}>
                 <Update image={newOfficers} header="Congratulations to the 2018-2019 LRHS TSA officer team!" date="5/2/18">
                   President: Katie Hartley<br />
                   Vice President: Olivia Miller<br />
