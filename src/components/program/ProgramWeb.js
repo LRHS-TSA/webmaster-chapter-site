@@ -91,7 +91,6 @@ const graph = {
     {to: 1, from: 6, label: 'Member Of'},
     {to: 9, from: 6, label: 'Member Of'},
     {to: 10, from: 6, label: 'Member Of'},
-    {to: 5, from: 6, label: 'Member Of'},
     {to: 1, from: 11, label: 'Member Of'},
     {to: 12, from: 11, label: 'Member Of'},
     {to: 10, from: 11, label: 'Member Of'},
