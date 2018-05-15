@@ -76,8 +76,6 @@ const engineering = [
 
 
 export default class Courses extends Component {
-  state = {}
-
 
 
   render() {

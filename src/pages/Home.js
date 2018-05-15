@@ -31,32 +31,6 @@ const data = [
   {name: 'Fifth Place', Count: 3}
 ];
 
-const creedSegment = [
-  {
-    start: "90vh",
-    end: "130vh",
-    properties: [
-      {
-        startValue: 0,
-        endValue: 40,
-        property: "translateY",
-        unit: "vh"
-      }    
-    ]
-  },
-  {
-    start: "130vh",
-    end: "140vh",
-    properties: [
-      {
-        startValue: 1,
-        endValue: 0,
-        property: "opacity"
-      }    
-    ]    
-  }
-]
-
 const restOfPage = [
   {
     start: "90vh",
@@ -74,12 +48,56 @@ const restOfPage = [
 ]
 
 export default class Home extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      desktop: true
+    }
+  }
+
+  resize() {
+    this.setState({desktop: window.innerWidth > 480});
+    console.log(this.state.desktop)
+    this.creedSegment = [
+      {
+        start: "90vh",
+        end: this.state.desktop ? "130vh" : "100vh",
+        properties: [
+          {
+            startValue: 0,
+            endValue: this.state.desktop ? 40 : 0,
+            property: "translateY",
+            unit: "vh"
+          }    
+        ]
+      },
+      {
+        start: this.state.desktop ? "130vh" : "150vh",
+        end: this.state.desktop ? "140vh" : "160vh",
+        properties: [
+          {
+            startValue: 1,
+            endValue: 0,
+            property: "opacity"
+          }    
+        ]    
+      }
+    ]
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+  }
+
   render() {
     return (
       <div>
         <PageHeading title="Lakewood Ranch TSA" subtitle="Learning to Lead in a Technical World" image={intro} thumbnail={introThumb} inverted />
         
-        <ParallaxSegment parallaxEffect={creedSegment} segmentStyle={{ padding: '8em 0em' }}>
+        <ParallaxSegment parallaxEffect={this.creedSegment} segmentStyle={{ padding: '8em 0em' }}>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
               <Grid.Column width={8}>
