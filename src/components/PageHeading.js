@@ -96,7 +96,7 @@ export default class PageHeading extends Component {
                 }
             </Container>
           </Segment>
-          <Background className="parallax-background">
+          <Background className="parallax-background blur">
             <BlurImageLoader src={this.props.image}
                           preview={this.props.thumbnail}
                           fullCover={true}
