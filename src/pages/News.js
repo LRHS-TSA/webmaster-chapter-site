@@ -54,7 +54,7 @@ export default class Home extends Component {
 
                 <Update image={states} header="2018 State Conference Results" date="3/3/18">
                   At the conference, LRHS TSA placed 2nd overall and placed in the top three for events 15 times. More information can be found in the 2018 State Conference Report Card.
-                  <Button as='a' fluid href={report} content='Conference Report Card' primary />
+                  <Button as='a' fluid target="_blank" href={report} content='Conference Report Card' primary />
                 </Update>
 
                 <Update image={tostates} header="Off to the 2018 Florida TSA State Conference" date="2/28/18">
